@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './GuitarPoetry.css'
 import profilePhoto from './tech_skills_photo.jpg'
-import dunsinVideo from './Guitar&Poetry/Dunsin_oyekan_who_is_like_you.mp4'
 import poetryPic from './Guitar&Poetry/pics_poetry.jpg'
 
 const videos = [
@@ -9,7 +8,7 @@ const videos = [
     id: 1,
     title: 'Who is like you - Dunsin Oyekan',
     description: 'Who is like you, oh Lord, The weight of who you are, no words can carry!',
-    videoUrl: dunsinVideo,
+    videoUrl: '/videos/Dunsin_oyekan_who_is_like_you.mp4',
     thumbnail: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop'
   },
   {
