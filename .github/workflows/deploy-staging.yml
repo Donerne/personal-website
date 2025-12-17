@@ -2,8 +2,12 @@ name: CI/CD - Staging
 
 on:
   push:
+    branches-ignore:
+      - main
+  pull_request:
     branches:
-      - develop
+      - main
+    types: [opened, synchronize, reopened]
 
 jobs:
   # CI Job: Validates code before deployment
@@ -26,10 +30,11 @@ jobs:
       - name: Build project (validation)
         run: npm run build
   
-  # CD Job: Deploys only if CI passes
+  # CD Job: Deploys only if CI passesimage.png
   deploy:
     name: Deploy to Staging
     needs: ci
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
