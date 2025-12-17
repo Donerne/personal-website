@@ -1,22 +1,28 @@
 import { useState } from 'react'
 import './Basketball.css'
 import profilePhoto from './tech_skills_photo.jpg'
-// Import your basketball images here - update these paths to match your image file locations
-import teamPhoto from './basketball-team.jpg'
-import sports4LifeBanner from './sports4life-banner.jpg'
+import image1 from './IMG-20250831-WA0007.jpg'
+import image2 from './IMG-20250831-WA0011.jpg'
+import image3 from './IMG-20250831-WA0020.jpg'
 
 const basketballImages = [
   {
     id: 1,
     title: 'Team Photo',
     description: 'Our basketball team standing together, united in our passion for the game.',
-    image: teamPhoto
+    image: image1
   },
   {
     id: 2,
     title: 'Sports 4 Life Ministries',
     description: 'Raising the next generation of God-fearing leaders through Christ-centered sports.',
-    image: sports4LifeBanner
+    image: image2
+  },
+  {
+    id: 3,
+    title: 'Basketball Moments',
+    description: 'Celebrating the joy and community that basketball brings to our lives.',
+    image: image3
   }
 ]
 
